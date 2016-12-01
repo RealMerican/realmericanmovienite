@@ -46,6 +46,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
+                        <a href="{% url 'about' %}">About</a>"
+                    </li>
+					<li>
                         <a href="{% url 'movies' %}">Movies</a>"
                     </li>
                     <li>
@@ -55,16 +58,12 @@
                         <a href="{% url 'people_list' %}">People</a>"
                     </li>
                     <li>
-                        <a href="{% url 'about' %}">About</a>"
-                    </li>
-                    <li>
+                        <a href="{% url 'search' %}">Search</a>
+                    </li>                    <li>
                         <a href="{% url 'participate' %}">Participate</a>
                     </li>
                     <li>
                         <a href="{% url 'contact' %}">Contact</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'search' %}">Search</a>
                     </li>
                 </ul>
             </div>

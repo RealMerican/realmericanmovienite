@@ -1,0 +1,79 @@
+{% extends 'mrdb/base.html' %}
+
+{% block content %}
+        <div class="container">
+                    <div class="section-heading">
+					<br>
+    <div class="title">
+        <h1>{{ title.title }}</h1>
+        <p>{{ title.type }} {{ title.year }}</p>
+		<hr>
+		<img class="img-responsive" src="http://placehold.it/300x300" alt="{{ titles.title }}">
+		<hr>
+        <p><b>Diversity Score:</b> {{ title.diversity_score }}</p>
+        <p><b>Bechdel Test:</b> {{ title.bechdel_test }}</p>
+        <p><b>Rating:</b> {{ title.rating }}</p>
+		<hr>
+        <p><b>Summary:</b> {{ title.summary|linebreaksbr }}</p>
+		<hr>
+		<p><b>Starring:</b> </p>
+		<hr>
+		<p><b>Seasons:</b> </p>
+		<hr>
+        <p><b>Watch Now:</b> </p>
+		<li><a href="https://www.amazon.com/s/ref=nb_sb_noss?field-keywords={{ title.title }}" target="new">Amazon</a></li>
+		<li><a href="https://www.netflix.com/search?q={{ title.title }}" target="new">Netflix</a></li>
+		<li><a href="#" target="new">iTunes</a></li>
+		<li><a href="http://www.hulu.com/search?q={{ title.title }}" target="new">Hulu</a></li>
+		<li><a href="https://play.google.com/store/search?q={{ title.title }}" target="new">Google Play</a></li>
+		<li><a href="http://search.abc.go.com/search?q={{ title.title }}" target="new">ABC</a></li>
+		<li><a href="http://www.nbc.com/" target="new">NBC</a></li>
+		<li><a href="http://www.cbs.com/sitesearch/results/?q={{ title.title }}" target="new">CBS</a></li>
+		<li><a href="http://www.fox.com/search/site/{{ title.title }}" target="new">Fox</a></li>
+		<li><a href="http://www.amc.com/search?q={{ title.title }}" target="new">AMC</a></li>
+		<li><a href="http://www.cwtv.com/search/?q={{ title.title }}" target="new">CW</a></li>
+		<li><a href="http://tv.verizon.com/search?query={{ title.title }}" target="new">Verizon FiOS</a></li>
+		<li><a href="https://tv.xfinity.com/search?q={{ title.title }}" target="new">Comcast xfinity</a></li>
+		<p><b>Buy Tickets:</b> </p>
+		<li><a href="http://www.fandango.com/search?q={{ title.title }}&mode=general" target="new">Fandango</a></li>
+		<li><a href="https://www.amctheatres.com/Search?q={{ title.title }}" target="new">AMC</a></li>
+		<li><a href="https://www.moviefone.com/search/{{ title.title }}/" target="new">Moviefone</a></li>
+    </div>
+
+					
+					
+					
+					
+                        <hr>
+                    </div>
+		</div>
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+{% endblock %}
